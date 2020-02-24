@@ -608,6 +608,6 @@ def db_client():
   return db
 
 if __name__ == "__main__":
-  IP = '128.194.140.214'
-  #IP = '127.0.0.1'
+  # IP = '128.194.140.214'
+  IP = '127.0.0.1'
   app.run(host = os.getenv('IP',IP), port=int(os.getenv('PORT',8080)), debug=True)
