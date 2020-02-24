@@ -600,8 +600,8 @@ def message_users():
 
 def db_client():
   try:
-    client = pymongo.MongoClient("mongodb://128.194.140.214:27017/")
-    #client = pymongo.MongoClient("mongodb://localhost:27017/")
+    # client = pymongo.MongoClient("mongodb://128.194.140.214:27017/")
+    client = pymongo.MongoClient("mongodb://localhost:27017/")
   except pymongo.errors.ServerSelectionTimeoutError as err:
     print(err)
   db = client["AggieSTEM"]
